@@ -44,14 +44,20 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      // Hide the default navbar by making it transparent and minimal
       style: 'dark',
-      title: ' ',
+      title: 'Physical AI',
       logo: {
         alt: 'Logo',
-        src: 'img/logo.svg',  // Use the same logo but hide it in CSS
+        src: 'img/logo.svg',
       },
-      items: [], // Empty items array to ensure no navbar items appear
+      items: [
+        {
+          type: 'doc',
+          docId: 'introduction',
+          position: 'left',
+          label: 'Docs',
+        },
+      ],
     },
     footer: {
       style: 'dark',
