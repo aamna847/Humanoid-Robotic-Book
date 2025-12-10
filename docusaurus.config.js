@@ -3,13 +3,13 @@ const path = require('path');
 module.exports = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'Bridging the gap between digital AI and the physical world',
-  url: 'https://your-docusaurus-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
+  url: 'https://aamna847.github.io',
+  baseUrl: '/Humanoid-Robotic-Book/',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Humanoid Robotics',
-  projectName: 'Physical AI Book',
+  organizationName: 'aamna847',
+  projectName: 'Humanoid-Robotic-Book',
   trailingSlash: false,
 
   presets: [
@@ -17,8 +17,9 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: './docusaurus/docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/humanoid-robotics/physical-ai-book/edit/main/',
+          editUrl: 'https://github.com/aamna847/Humanoid-Robotic-Book/edit/main/',
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
         },
@@ -32,7 +33,6 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/main/packages/create-docusaurus/templates/shared/',
         },
         sitemap: {
-          lastmod: 'date',
           changefreq: 'weekly',
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
@@ -91,7 +91,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/humanoid-robotics/physical-ai-book',
+              href: 'https://github.com/aamna847/Humanoid-Robotic-Book',
             },
           ],
         },
